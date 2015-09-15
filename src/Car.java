@@ -42,8 +42,16 @@ public class Car {
 	 * "Color: red, Speed: 100"
 	 */
 	public String toString(){
-		// not implemented!
-		return("");
+		return("Color: " + color + ", Speed: "+ speed);
+	}
+
+	public void decelerat(int amount) {
+		int limit = 0;
+		if(limit >= (this.speed - amount)){
+		  this.speed = limit;
+		}else{
+		  this.speed-= amount;
+		}		
 	}
 
 }
